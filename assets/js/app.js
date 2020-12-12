@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    // credits : andika sujanadi
+
     const mywindow = document.querySelector('#mywindow');
     const vid = document.getElementById("myVideo");
     const vidCont = document.querySelector(".vidcont");
@@ -65,7 +67,10 @@ document.addEventListener('DOMContentLoaded', function () {
         var fading = window.setInterval(func, interval);
     }
 
-    _('.preloader').fade('out', 500);
+    setTimeout(() => {
+        _('.preloader').fade('out', 500);
+    }, 2000);
+
 
     function move() {
         kali = 40;
@@ -220,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     const btnYes = document.querySelector('.btn-yes');
-    btnYes.addEventListener('mouseover', function () {
+    btnYes.addEventListener('click', function () {
         playVideo();
     });
 
