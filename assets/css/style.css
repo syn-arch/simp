@@ -83,7 +83,7 @@ svg {
 }
 
 .btn {
-    margin-right:20px;
+    /* margin-right:20px; */
     height: 50px;
     width: 150px;
     border-radius: 50px;
@@ -92,12 +92,23 @@ svg {
     color: white;
 }
 
+.btn-input {
+    margin-right: 20px;
+}
+
 .btn-pink {
     background-color: #FF4F4F;
 }
 
 .btn-pink:hover {
     background-color: #da3535;
+}
+.btn-green {
+    background-color:#01b329;
+}
+
+.btn-green:hover {
+    background-color: #086d1f;
 }
 
 .next {
@@ -110,6 +121,88 @@ svg {
 
 .btn-next {
     box-shadow: 5px 5px 25px 2px rgba(255, 255, 255, 0.25);
+}
+
+.container-form-shoot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-shoot {
+    width:50%;
+    padding-bottom: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 4px 3px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(50px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 25px;
+    position: absolute;
+    display: block; 
+    top: calc(50% - 30%); 
+    left: calc(50% - 25%);
+}
+
+.title-shoot{
+    color: white;
+    font-family: 'rochester';
+    text-align: center;
+    font-size: 40px;
+    padding: 40px;
+}
+
+.button-wrapper{
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.myanimated{
+    transition: all ease .3s;
+}
+
+.vidcont{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    background: #000000A0;
+    z-index: 2;
+}
+
+.vidcont:hover{
+    cursor: none;
+}
+
+video:hover{
+    cursor: none;
+}
+
+video{
+    position: relative;
+    left: 0;
+    top: 0;
+    opacity: 1;
+}
+
+.divvideo{
+    width: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+
+.myoverlay{
+    backdrop-filter: blur(7px);
 }
 
 /* responsive */
@@ -137,13 +230,32 @@ svg {
     .form-control {
         font-size: 20px;
     }
+
     .form-control::placeholder {
         font-size: 15px;
     }
+
     .btn {
-        margin-right: 10px;
         height: 40px;
         font-size: 10px;
         width: 110px;
+    }
+
+    .btn-input {
+        margin-right: 10px;
+    }
+
+    .form-shoot{
+        width: 70%;
+        top: calc(50% - 30%); 
+        left: calc(50% - 35%);
+    }
+
+    .title-shoot {
+        font-size: 30px;
+    }
+
+    .divvideo{
+        width: 100%;
     }
 }
