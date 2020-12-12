@@ -283,6 +283,17 @@ form {
   top: -24px;
   border-radius: 50% 50% 0 0;
 }
+
+.copyright {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'poppins';
+    font-size: 10px;
+}
+
 @keyframes lds-heart {
   0% {
     transform: scale(0.95);

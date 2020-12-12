@@ -1,4 +1,4 @@
-document.addEventListener('load', function () {
+window.addEventListener('load', function () {
 
     const mywindow = document.querySelector('#mywindow');
     const vid = document.getElementById("myVideo");
