@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('load', function () {
 
     const mywindow = document.querySelector('#mywindow');
     const vid = document.getElementById("myVideo");
@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     _('.preloader').fade('out', 500);
-
 
     function move() {
         kali = 40;
