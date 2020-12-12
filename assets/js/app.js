@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var fading = window.setInterval(func, interval);
     }
 
-    _('.preloader').fade('out', 1000);
+    _('.preloader').fade('out', 500);
 
 
     function move() {
@@ -182,8 +182,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         _('.welcome').fade('out', 500);
 
-        console.log(name.toUpperCase());
-
         document.querySelector('.myname2').innerHTML = name
         document.querySelector('.myname3').innerHTML = name.toUpperCase();
 
@@ -213,4 +211,18 @@ document.addEventListener('DOMContentLoaded', function () {
         playOpening();
     });
 
-})
+    const btnNot = document.querySelector('.btn-not');
+    btnNot.addEventListener('mouseover', function () {
+        move();
+    });
+
+    btnNot.addEventListener('click', function () {
+        move2();
+    });
+
+    const btnYes = document.querySelector('.btn-yes');
+    btnYes.addEventListener('mouseover', function () {
+        playVideo();
+    });
+
+});
