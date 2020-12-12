@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin:0;
+}
+
+@font-face {
+  font-family: rochester;
+  src: url(/assets/font/rochester.ttf);
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/mainbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 60%;
+    margin:auto;
+}
+
+.greeting {
+    text-align: center;
+    color: white;
+    font-family: 'rochester';
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+.btn {
+    font-family: 'Poppins';
+}
+
+.icon {
+    padding-top: 10%;
+    text-align: center;
+}
+
+svg {
+    width: 20%;
+    fill:white;
+}
+
+.input-group {
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    height: 70px;
+    line-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+}
+
+.form-control {
+    margin-left:20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    outline:none;
+    font-size: 30px;
+    height: 50px;
+    color:white;
+    width: 100%;
+}
+
+.form-control::placeholder {
+    color:rgba(255, 255, 255, 0.753);
+    line-height: 50px;
+    font-size: 25px;
+    font-family: 'rochester';
+}
+
+.btn {
+    margin-right:20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+}
+
+.btn-pink {
+    background-color: #FF4F4F;
+}
+
+.btn-pink:hover {
+    background-color: #da3535;
+}
+
+/* responsive */
+@media screen and (max-width:600px){
+    .container{
+        width: 80%;
+    }
+
+    .icon {
+        padding-top: 30%;
+    }
+
+    svg{
+        width: 30%;
+    }
+
+    .greeting {
+        font-size: 1.8em;
+    }
+
+    .input-group {
+        height: 50px;
+    }
+
+    .form-control {
+        font-size: 20px;
+    }
+    .form-control::placeholder {
+        font-size: 15px;
+    }
+    .btn {
+        margin-right: 10px;
+        height: 40px;
+        font-size: 10px;
+        width: 110px;
+    }
+}
