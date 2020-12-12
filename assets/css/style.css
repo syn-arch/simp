@@ -60,6 +60,8 @@ svg {
     align-items: center;
     justify-content: space-between;
     border: 1px solid white;
+    box-shadow: 5px 5px 25px 2px rgba(255, 255, 255, 0.25);
+
 }
 
 .form-control {
@@ -96,6 +98,18 @@ svg {
 
 .btn-pink:hover {
     background-color: #da3535;
+}
+
+.next {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-next {
+    box-shadow: 5px 5px 25px 2px rgba(255, 255, 255, 0.25);
 }
 
 /* responsive */
